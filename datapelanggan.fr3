@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="4.12.6" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="45261,4511981134" ReportOptions.Description.Text="" ReportOptions.LastChange="45261,4677813773" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C65667403C80003546F7003000108446174617365747301010C3400000020446174615365743D22667278444244617461736574312220446174615365744E616D653D2266727844424461746173657431220000095661726961626C65730100055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" Height="75,5906" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxMemoView Name="Memo4" Left="166,29932" Top="22,67718" Width="510,23655" Height="52,91342" ShowHint="False" Font.Charset="0" Font.Color="0" Font.Height="-27" Font.Name="Arial Rounded MT Bold" Font.Style="0" ParentFont="False" Text="LAPORAN DATA PELANGGAN"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" Height="18,89765" Left="0" Top="207,87415" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" RowCount="0">
+      <TfrxMemoView Name="frxDBDataset1id_member" Left="3,77953" Top="0" Width="257,00804" Height="18,89765" ShowHint="False" DataField="id_member" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="[frxDBDataset1.&#34;id_member&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1nama" Left="260,78757" Top="0" Width="268,34663" Height="18,89765" ShowHint="False" DataField="nama" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="[frxDBDataset1.&#34;nama&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1no_hp" Left="529,1342" Top="0" Width="188,9765" Height="18,89765" ShowHint="False" DataField="no_hp" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="[frxDBDataset1.&#34;no_hp&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageHeader Name="PageHeader1" Height="30,23624" Left="0" Top="117,16543" Width="718,1107">
+      <TfrxMemoView Name="Memo1" Left="3,77953" Top="3,77953" Width="257,00804" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="ID PELANGGAN"/>
+      <TfrxMemoView Name="Memo2" Left="260,78757" Top="3,77953" Width="268,34663" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="NAMA PELANGGAN"/>
+      <TfrxMemoView Name="Memo3" Left="529,1342" Top="3,77953" Width="188,9765" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="NO HP"/>
+    </TfrxPageHeader>
+  </TfrxReportPage>
+</TfrxReport>
