@@ -1,8 +1,8 @@
 object Fmusik: TFmusik
-  Left = 192
-  Top = 117
+  Left = 311
+  Top = 182
   Width = 857
-  Height = 645
+  Height = 628
   AutoSize = True
   Caption = 'Data Alat Musik'
   Color = clActiveCaption
@@ -20,6 +20,13 @@ object Fmusik: TFmusik
     Width = 59
     Height = 13
     Caption = 'ID BARANG'
+  end
+  object Label3: TLabel
+    Left = 528
+    Top = 328
+    Width = 62
+    Height = 13
+    Caption = 'PENCARIAN'
   end
   object Panel1: TPanel
     Left = 0
@@ -117,8 +124,8 @@ object Fmusik: TFmusik
     end
   end
   object GroupBox2: TGroupBox
-    Left = 368
-    Top = 120
+    Left = 328
+    Top = 128
     Width = 185
     Height = 249
     Caption = 'AKSI'
@@ -257,6 +264,14 @@ object Fmusik: TFmusik
     Width = 121
     Height = 21
     TabOrder = 4
+  end
+  object EdtCari: TEdit
+    Left = 528
+    Top = 344
+    Width = 153
+    Height = 21
+    TabOrder = 5
+    OnChange = EdtCariChange
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1

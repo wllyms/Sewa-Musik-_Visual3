@@ -1,8 +1,9 @@
 object Fstudio: TFstudio
   Left = 192
   Top = 117
-  Width = 1044
-  Height = 563
+  Width = 857
+  Height = 636
+  AutoSize = True
   Caption = 'DATA STUDIO'
   Color = clActiveCaption
   Font.Charset = DEFAULT_CHARSET
@@ -14,15 +15,22 @@ object Fstudio: TFstudio
   PixelsPerInch = 96
   TextHeight = 13
   object Label6: TLabel
-    Left = 128
-    Top = 248
+    Left = 8
+    Top = 224
     Width = 59
     Height = 13
     Caption = 'ID BARANG'
   end
+  object Label3: TLabel
+    Left = 536
+    Top = 320
+    Width = 62
+    Height = 13
+    Caption = 'PENCARIAN'
+  end
   object Panel1: TPanel
-    Left = 120
-    Top = 24
+    Left = 0
+    Top = 0
     Width = 849
     Height = 89
     Color = clMoneyGreen
@@ -55,8 +63,8 @@ object Fstudio: TFstudio
     end
   end
   object GroupBox1: TGroupBox
-    Left = 120
-    Top = 136
+    Left = 0
+    Top = 112
     Width = 305
     Height = 257
     Caption = 'INPUT DATA STUDIO'
@@ -116,8 +124,8 @@ object Fstudio: TFstudio
     end
   end
   object GroupBox2: TGroupBox
-    Left = 488
-    Top = 144
+    Left = 328
+    Top = 120
     Width = 185
     Height = 249
     Caption = 'AKSI'
@@ -135,6 +143,7 @@ object Fstudio: TFstudio
       Font.Style = []
       ParentFont = False
       TabOrder = 0
+      OnClick = Button1Click
     end
     object Button2: TButton
       Left = 56
@@ -149,6 +158,7 @@ object Fstudio: TFstudio
       Font.Style = []
       ParentFont = False
       TabOrder = 1
+      OnClick = Button2Click
     end
     object Button3: TButton
       Left = 56
@@ -163,6 +173,7 @@ object Fstudio: TFstudio
       Font.Style = []
       ParentFont = False
       TabOrder = 2
+      OnClick = Button3Click
     end
     object Button4: TButton
       Left = 56
@@ -180,9 +191,9 @@ object Fstudio: TFstudio
     end
   end
   object DBGrid1: TDBGrid
-    Left = 120
-    Top = 412
-    Width = 849
+    Left = 0
+    Top = 388
+    Width = 553
     Height = 217
     DataSource = DataSource1
     TabOrder = 3
@@ -248,12 +259,20 @@ object Fstudio: TFstudio
         Visible = True
       end>
   end
-  object Enamabarang: TEdit
-    Left = 248
-    Top = 232
+  object Estudio: TEdit
+    Left = 128
+    Top = 208
     Width = 121
     Height = 21
     TabOrder = 4
+  end
+  object EdtCari: TEdit
+    Left = 536
+    Top = 344
+    Width = 177
+    Height = 21
+    TabOrder = 5
+    OnChange = EdtCariChange
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1

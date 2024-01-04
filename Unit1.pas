@@ -50,7 +50,7 @@ end;
 
 procedure TFutama.Button3Click(Sender: TObject);
 begin
-Fsound.show;
+Fstudio.show;
 end;
 
 procedure TFutama.Button4Click(Sender: TObject);

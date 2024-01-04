@@ -2,7 +2,7 @@ object Futama: TFutama
   Left = 192
   Top = 117
   Width = 897
-  Height = 617
+  Height = 600
   AutoSize = True
   Caption = 'MENU UTAMA'
   Color = clActiveCaption

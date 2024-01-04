@@ -1,8 +1,9 @@
 object Fsound: TFsound
   Left = 204
   Top = 116
-  Width = 1032
-  Height = 641
+  Width = 857
+  Height = 633
+  AutoSize = True
   Caption = 'DATA SOUND SYSTEM'
   Color = clActiveCaption
   Font.Charset = DEFAULT_CHARSET
@@ -14,15 +15,15 @@ object Fsound: TFsound
   PixelsPerInch = 96
   TextHeight = 13
   object Label6: TLabel
-    Left = 128
-    Top = 248
+    Left = 8
+    Top = 224
     Width = 59
     Height = 13
     Caption = 'ID BARANG'
   end
   object Panel1: TPanel
-    Left = 120
-    Top = 24
+    Left = 0
+    Top = 0
     Width = 849
     Height = 89
     Color = clMoneyGreen
@@ -55,8 +56,8 @@ object Fsound: TFsound
     end
   end
   object GroupBox1: TGroupBox
-    Left = 120
-    Top = 136
+    Left = 0
+    Top = 112
     Width = 305
     Height = 257
     Caption = 'INPUT DATA SOUND SYSTEM'
@@ -116,8 +117,8 @@ object Fsound: TFsound
     end
   end
   object GroupBox2: TGroupBox
-    Left = 488
-    Top = 144
+    Left = 368
+    Top = 120
     Width = 185
     Height = 249
     Caption = 'AKSI'
@@ -184,15 +185,15 @@ object Fsound: TFsound
     end
   end
   object Ebarang: TEdit
-    Left = 256
-    Top = 232
+    Left = 136
+    Top = 208
     Width = 121
     Height = 21
     TabOrder = 3
   end
   object DBGrid1: TDBGrid
-    Left = 120
-    Top = 416
+    Left = 0
+    Top = 392
     Width = 553
     Height = 193
     DataSource = DataSource1

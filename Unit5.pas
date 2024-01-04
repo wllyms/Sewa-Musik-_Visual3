@@ -54,6 +54,7 @@ type
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure DBGrid1CellClick(Column: TColumn);
+    procedure Button4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -65,6 +66,8 @@ var
   id: string;
 
 implementation
+
+uses Unit1;
 
 {$R *.dfm}
 
@@ -141,6 +144,11 @@ id:=ZQuery4.Fields[0].AsString;
   Elama.Text:=ZQuery4.Fields[6].AsString;
   Etotal.Text:=ZQuery4.Fields[7].AsString;
   
+end;
+
+procedure TFpenyewaan.Button4Click(Sender: TObject);
+begin
+Futama.show;
 end;
 
 end.

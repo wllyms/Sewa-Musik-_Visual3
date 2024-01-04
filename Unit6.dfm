@@ -2,7 +2,7 @@ object Fstudio: TFstudio
   Left = 192
   Top = 117
   Width = 857
-  Height = 653
+  Height = 636
   AutoSize = True
   Caption = 'DATA STUDIO'
   Color = clActiveCaption
@@ -20,6 +20,13 @@ object Fstudio: TFstudio
     Width = 59
     Height = 13
     Caption = 'ID BARANG'
+  end
+  object Label3: TLabel
+    Left = 536
+    Top = 320
+    Width = 62
+    Height = 13
+    Caption = 'PENCARIAN'
   end
   object Panel1: TPanel
     Left = 0
@@ -117,7 +124,7 @@ object Fstudio: TFstudio
     end
   end
   object GroupBox2: TGroupBox
-    Left = 368
+    Left = 328
     Top = 120
     Width = 185
     Height = 249
@@ -136,6 +143,7 @@ object Fstudio: TFstudio
       Font.Style = []
       ParentFont = False
       TabOrder = 0
+      OnClick = Button1Click
     end
     object Button2: TButton
       Left = 56
@@ -150,6 +158,7 @@ object Fstudio: TFstudio
       Font.Style = []
       ParentFont = False
       TabOrder = 1
+      OnClick = Button2Click
     end
     object Button3: TButton
       Left = 56
@@ -164,6 +173,7 @@ object Fstudio: TFstudio
       Font.Style = []
       ParentFont = False
       TabOrder = 2
+      OnClick = Button3Click
     end
     object Button4: TButton
       Left = 56
@@ -249,12 +259,20 @@ object Fstudio: TFstudio
         Visible = True
       end>
   end
-  object Enamabarang: TEdit
+  object Estudio: TEdit
     Left = 128
     Top = 208
     Width = 121
     Height = 21
     TabOrder = 4
+  end
+  object EdtCari: TEdit
+    Left = 536
+    Top = 344
+    Width = 177
+    Height = 21
+    TabOrder = 5
+    OnChange = EdtCariChange
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1

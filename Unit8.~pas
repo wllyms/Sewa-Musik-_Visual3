@@ -74,6 +74,7 @@ begin
       else
       begin
       MessageDlg('Berhasil Login',mtInformation,[mbOK],0) ;
+      Futama.Show;
       end
     end;
 end;

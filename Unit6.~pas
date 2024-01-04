@@ -25,10 +25,16 @@ type
     Button3: TButton;
     Button4: TButton;
     DBGrid1: TDBGrid;
-    Enamabarang: TEdit;
+    Estudio: TEdit;
     ZQuery1: TZQuery;
     ZConnection1: TZConnection;
     DataSource1: TDataSource;
+    Label3: TLabel;
+    EdtCari: TEdit;
+    procedure EdtCariChange(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -37,10 +43,57 @@ type
 
 var
   Fstudio: TFstudio;
+  id: string;
 
 implementation
 
 {$R *.dfm}
+
+procedure TFstudio.EdtCariChange(Sender: TObject);
+begin
+with ZQuery1 do
+begin
+     Close;
+     SQL.Clear;
+     SQL.Text:='select * from studio where nama_studio like'+QuotedStr('%'+EdtCari.Text+'%');
+     Open;
+end;
+end;
+
+procedure TFstudio.Button1Click(Sender: TObject);
+begin
+ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('insert into studio values(null,"'+Ekode.Text+'","'+Estudio.Text+'","'+Esewa.Text+'")');
+  ZQuery1.ExecSQL ;
+
+  ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('select * from studio');
+  ZQuery1.Open;
+  ShowMessage('DATA BERHASIL DISIMPAN');
+end;
+
+procedure TFstudio.Button2Click(Sender: TObject);
+begin
+ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('delete from musik where id_studio="'+id+'"');
+  ZQuery1.ExecSQL;
+  ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('select * from studio');
+  ZQuery1.Open;
+  ShowMessage('DATA BERHASIL DIHAPUS!');
+end;
+
+procedure TFstudio.Button3Click(Sender: TObject);
+begin
+ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('update studio set kode_studio="'+Ekode.Text+'", nama_studio="'+Estudio.Text+'", harga_studio="'+Esewa.Text+'" where id_musik="'+id+'"');
+  ZQuery1.ExecSQL;
+
+  ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('select * from studio');
+  ZQuery1.Open;
+  Showmessage('DATA BERHASIL DI EDIT');
+end;
 
 end.
  

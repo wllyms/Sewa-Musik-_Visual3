@@ -2,7 +2,7 @@ object Fsound: TFsound
   Left = 204
   Top = 116
   Width = 857
-  Height = 633
+  Height = 616
   AutoSize = True
   Caption = 'DATA SOUND SYSTEM'
   Color = clActiveCaption
@@ -20,6 +20,13 @@ object Fsound: TFsound
     Width = 59
     Height = 13
     Caption = 'ID BARANG'
+  end
+  object Label3: TLabel
+    Left = 528
+    Top = 320
+    Width = 62
+    Height = 13
+    Caption = 'PENCARIAN'
   end
   object Panel1: TPanel
     Left = 0
@@ -117,7 +124,7 @@ object Fsound: TFsound
     end
   end
   object GroupBox2: TGroupBox
-    Left = 368
+    Left = 328
     Top = 120
     Width = 185
     Height = 249
@@ -259,6 +266,14 @@ object Fsound: TFsound
         Title.Font.Style = [fsBold]
         Visible = True
       end>
+  end
+  object EdtCari: TEdit
+    Left = 528
+    Top = 344
+    Width = 169
+    Height = 21
+    TabOrder = 5
+    OnChange = EdtCariChange
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1

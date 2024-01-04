@@ -178,6 +178,7 @@ object Fpenyewaan: TFpenyewaan
       Height = 25
       Caption = 'KEMBALI'
       TabOrder = 3
+      OnClick = Button4Click
     end
     object Button5: TButton
       Left = 56
@@ -214,7 +215,6 @@ object Fpenyewaan: TFpenyewaan
         Title.Font.Height = -12
         Title.Font.Name = 'MS Sans Serif'
         Title.Font.Style = [fsBold]
-        Width = -1
         Visible = False
       end
       item
@@ -407,7 +407,6 @@ object Fpenyewaan: TFpenyewaan
         Title.Font.Height = -11
         Title.Font.Name = 'MS Sans Serif'
         Title.Font.Style = [fsBold]
-        Width = -1
         Visible = False
       end
       item
@@ -471,11 +470,6 @@ object Fpenyewaan: TFpenyewaan
         Alignment = taCenter
         Expanded = False
         FieldName = 'id_musik'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'MS Sans Serif'
-        Font.Style = []
         Title.Alignment = taCenter
         Title.Caption = 'ID MUSIK'
         Title.Font.Charset = DEFAULT_CHARSET
@@ -489,11 +483,6 @@ object Fpenyewaan: TFpenyewaan
         Alignment = taCenter
         Expanded = False
         FieldName = 'kode_musik'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'MS Sans Serif'
-        Font.Style = []
         Title.Alignment = taCenter
         Title.Caption = 'KODE MUSIK'
         Title.Font.Charset = DEFAULT_CHARSET
@@ -508,11 +497,6 @@ object Fpenyewaan: TFpenyewaan
         Alignment = taCenter
         Expanded = False
         FieldName = 'nama_musik'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'MS Sans Serif'
-        Font.Style = []
         Title.Alignment = taCenter
         Title.Caption = 'NAMA BARANG'
         Title.Font.Charset = DEFAULT_CHARSET
@@ -527,11 +511,6 @@ object Fpenyewaan: TFpenyewaan
         Alignment = taCenter
         Expanded = False
         FieldName = 'harga_musik'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'MS Sans Serif'
-        Font.Style = []
         Title.Alignment = taCenter
         Title.Caption = 'HARGA'
         Title.Font.Charset = DEFAULT_CHARSET

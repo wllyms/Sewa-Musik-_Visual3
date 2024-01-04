@@ -29,11 +29,14 @@ type
     Ekode: TEdit;
     Ebarang: TEdit;
     DBGrid1: TDBGrid;
+    Label3: TLabel;
+    EdtCari: TEdit;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure DBGrid1CellClick(Column: TColumn);
     procedure Button4Click(Sender: TObject);
+    procedure EdtCariChange(Sender: TObject);
   private
     { Private declarations }
   public
@@ -97,6 +100,17 @@ end;
 procedure TFsound.Button4Click(Sender: TObject);
 begin
 Futama.show;
+end;
+
+procedure TFsound.EdtCariChange(Sender: TObject);
+begin
+with ZQuery1 do
+begin
+     Close;
+     SQL.Clear;
+     SQL.Text:='select * from sound where nama_sound like'+QuotedStr('%'+EdtCari.Text+'%');
+     Open;
+end;
 end;
 
 end.

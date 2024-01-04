@@ -1,8 +1,9 @@
 object Flogin: TFlogin
   Left = 192
   Top = 117
-  Width = 1044
-  Height = 540
+  Width = 401
+  Height = 336
+  AutoSize = True
   Caption = 'HALAMAN LOGIN'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -14,15 +15,15 @@ object Flogin: TFlogin
   PixelsPerInch = 96
   TextHeight = 13
   object Shape1: TShape
-    Left = 136
-    Top = 64
+    Left = 0
+    Top = 0
     Width = 393
     Height = 305
     Brush.Color = clActiveCaption
   end
   object Label1: TLabel
-    Left = 272
-    Top = 96
+    Left = 136
+    Top = 32
     Width = 90
     Height = 33
     Alignment = taCenter
@@ -35,8 +36,8 @@ object Flogin: TFlogin
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 288
-    Top = 160
+    Left = 152
+    Top = 96
     Width = 86
     Height = 16
     Caption = 'USERNAME'
@@ -48,8 +49,8 @@ object Flogin: TFlogin
     ParentFont = False
   end
   object Label3: TLabel
-    Left = 288
-    Top = 224
+    Left = 152
+    Top = 160
     Width = 88
     Height = 16
     Caption = 'PASSWORD'
@@ -61,23 +62,23 @@ object Flogin: TFlogin
     ParentFont = False
   end
   object Euser: TEdit
-    Left = 248
-    Top = 184
+    Left = 112
+    Top = 120
     Width = 177
     Height = 21
     TabOrder = 0
   end
   object Epw: TEdit
-    Left = 248
-    Top = 248
+    Left = 112
+    Top = 184
     Width = 177
     Height = 21
     PasswordChar = '*'
     TabOrder = 1
   end
   object Button1: TButton
-    Left = 248
-    Top = 304
+    Left = 112
+    Top = 240
     Width = 75
     Height = 25
     Caption = 'MASUK'
@@ -91,8 +92,8 @@ object Flogin: TFlogin
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 352
-    Top = 304
+    Left = 216
+    Top = 240
     Width = 75
     Height = 25
     Caption = 'DAFTAR'
