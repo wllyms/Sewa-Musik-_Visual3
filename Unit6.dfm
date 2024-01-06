@@ -188,6 +188,7 @@ object Fstudio: TFstudio
       Font.Style = []
       ParentFont = False
       TabOrder = 3
+      OnClick = Button4Click
     end
   end
   object DBGrid1: TDBGrid
@@ -202,6 +203,7 @@ object Fstudio: TFstudio
     TitleFont.Height = -11
     TitleFont.Name = 'MS Sans Serif'
     TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
     Columns = <
       item
         Alignment = taCenter

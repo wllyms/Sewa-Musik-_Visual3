@@ -35,6 +35,8 @@ type
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure DBGrid1CellClick(Column: TColumn);
   private
     { Private declarations }
   public
@@ -46,6 +48,8 @@ var
   id: string;
 
 implementation
+
+uses Unit1;
 
 {$R *.dfm}
 
@@ -93,6 +97,19 @@ ZQuery1.SQL.Clear;
   ZQuery1.SQL.Add('select * from studio');
   ZQuery1.Open;
   Showmessage('DATA BERHASIL DI EDIT');
+end;
+
+procedure TFstudio.Button4Click(Sender: TObject);
+begin
+Futama.show;
+end;
+
+procedure TFstudio.DBGrid1CellClick(Column: TColumn);
+begin
+id:=ZQuery1.Fields[0].AsString;
+  Ekode.Text:=ZQuery1.Fields[1].AsString;
+  Estudio.Text:=ZQuery1.Fields[2].AsString;
+  Esewa.Text:=ZQuery1.Fields[3].AsString;
 end;
 
 end.
